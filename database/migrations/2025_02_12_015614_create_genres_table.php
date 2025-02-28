@@ -11,12 +11,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('genres', function (Blueprint $table) {
+        Schema::create('genders', function (Blueprint $table) {
             $table->id(); // Crea la columna 'id' como clave primaria
-            $table->string('name'); // Crea la columna 'name' para el nombre del género
+            $table->string('gender'); // Crea la columna 'name' para el nombre del género
             $table->timestamps(); // Crea las columnas 'created_at' y 'updated_at'
         });
-    }
+    }   
 
     /**
      * Reverse the migrations.

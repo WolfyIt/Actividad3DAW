@@ -21,7 +21,6 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('real_name')->nullable();
-            $table->integer('children')->default(0);
             $table->foreignId('universe_id')->nullable()->constrained('universes')->onDelete('set null');
             $table->timestamps();
         });
